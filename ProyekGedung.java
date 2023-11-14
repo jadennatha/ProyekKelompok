@@ -134,6 +134,16 @@ public class ProyekGedung {
                             tgl = input.next();
                             System.out.println("\nKapasitas Maksimal tamu 900.");
                             System.out.println("Tarif yang harus anda bayar Rp.90000/tamu");
+                            do {
+                                System.out.print("Masukkan Jumlah Tamu : ");
+                                tm = input.nextInt();
+                                tarif = tm * 90000;
+                                if (tm > 900) {
+                                    System.out.println("Mohon Maaf, jumlah tamu melebihi kapasitas maks. 900");
+                                } else if (tm < 1){
+                                    System.out.println("Mohon memasukkan jumlah tamu minimal 1");
+                                }
+                            } while (tm < 1 || tm > 900);
                         } else if (verivikasi.equalsIgnoreCase("t")) {
                             System.out.print("Terima kasih! Selamat berjumpa kembali:)");
                             System.exit(0);
