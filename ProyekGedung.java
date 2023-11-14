@@ -261,6 +261,67 @@ public class ProyekGedung {
                                                 System.out.println("Mohon masukkan angka antara 1 dan 2.");
                                             }
                                         } while (MmtdBayar < 1 || MmtdBayar > 2);
+                                        switch (MmtdBayar) {
+                                            case 1:
+                                                boolean isKode1Valid = false;
+                                                do {
+                                                    System.out.println("\nKode Verifikasi dikirim melalui SMS");
+                                                    System.out.print("Masukkan Kode Verivikasi : ");
+                                                    inputKodeMenu1 = input.next();
+                                                    isKode1Valid = false;
+                                                    for (String kode : kodeVeriv) {
+                                                        if (inputKodeMenu1.equals(kode)) {
+                                                            isKode1Valid = true;
+                                                            break;
+                                                        }
+                                                    }
+                                                    if (!isKode1Valid) {
+                                                        System.out.println("Kode Verifikasi Salah. Silahkan coba lagi");
+                                                    } else {
+                                                        System.out.println("\n>---------------------------------------<");
+                                                        System.out.println("|\t\tGEDUNG SOEHAT\t\t|");
+                                                        System.out.println("|________Informasi Pemesanan Anda!______|");
+                                                        System.out.println("Atas Nama       : " + name);
+                                                        System.out.println("No. Telepon     : " + noTelp);
+                                                        System.out.println("Tanggal         : " + tgl);
+                                                        System.out.println("Jumlah Tamu     : " + tm);
+                                                        System.out.println("Total Biaya     : Rp." + tarif);
+                                                        System.out.println("----------------------------------------");
+                                                    }
+                                                } while (!isKode1Valid);
+                                                System.exit(0);;
+                                            case 2:
+                                                boolean isKode2Valid = false;
+                                                do {
+                                                    System.out.println("\nKode Verifikasi dikirim melalui SMS");
+                                                    System.out.print("Masukkan Kode Verivikasi : ");
+                                                    inputKodeMenu2 = input.next();
+                                                    isKode2Valid = false;
+                                                    for (String kode : kodeVeriv) {
+                                                        if (inputKodeMenu2.equals(kode)) {
+                                                            isKode2Valid = true;
+                                                            break;
+                                                        }
+                                                    }
+                                                    if (!isKode2Valid) {
+                                                        System.out.println("Kode Verifikasi Salah. Silahkan coba lagi");
+                                                    } else {
+                                                        System.out.println("\n>---------------------------------------<");
+                                                        System.out.println("|\t\tGEDUNG SOEHAT\t\t|");
+                                                        System.out.println("|________Informasi Pemesanan Anda!______|");
+                                                        System.out.println("Atas Nama       : " + name);
+                                                        System.out.println("No. Telepon     : " + noTelp);
+                                                        System.out.println("Tanggal         : " + tgl);
+                                                        System.out.println("Jumlah Tamu     : " + tm);
+                                                        System.out.println("Total Biaya     : Rp." + tarif);
+                                                        System.out.println("----------------------------------------");
+                                                    }
+                                                } while (!isKode2Valid);
+                                                System.exit(0);;
+                                                break;
+                                            default:
+                                                break;
+                                        }
                                         break;
                                     default:
                                         break;
