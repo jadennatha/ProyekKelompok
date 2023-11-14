@@ -33,6 +33,14 @@ public class ProyekGedung {
                 String inputUserBaru = input.next();
                 System.out.print("Masukkan password baru: ");
                 String inputPwBaru = input.next();
+                if (jmlUserMemb < regUserMemb.length && jmlUserMemb < regPwMemb.length) {
+                    regUserMemb[jmlUserMemb] = inputUserBaru;
+                    regPwMemb[jmlUserMemb] = inputPwBaru;
+                    jmlUserMemb++;
+                    System.out.println("User member baru berhasil terdaftar!");
+                } else {
+                    System.out.println("Maaf, jumlah member melebihi batas yang ditentukan.");
+                }
             } else if (akun.equalsIgnoreCase("y")) {
             } else if (!akun.equalsIgnoreCase("y") || !akun.equalsIgnoreCase("t")){
                 System.out.println("Pilihan tidak tersedia. Mohon masukkan huruf y/t");
