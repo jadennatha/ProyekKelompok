@@ -123,8 +123,15 @@ public class ProyekGedung {
                     } while (!userMemberValid);
                     boolean inginPesanLagi=true;
                     while (inginPesanLagi) {
-                    System.out.print("\nApakah Anda ingin memesan gedung (y/t)? ");
-                    verivikasi = input.next();
+                        System.out.print("\nApakah Anda ingin memesan gedung (y/t)? ");
+                        verivikasi = input.next();
+                        if (verivikasi.equalsIgnoreCase("y")) {
+                        } else if (verivikasi.equalsIgnoreCase("t")) {
+                            System.out.print("Terima kasih! Selamat berjumpa kembali:)");
+                            System.exit(0);
+                        } else {    
+                            System.out.println("Maaf, pilihan anda salah! masukkan y/t.");
+                        }
                     }
                 } else if (stepLogin==3){
                     System.out.println("Terima kasih.");
