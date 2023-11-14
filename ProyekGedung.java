@@ -146,9 +146,16 @@ public class ProyekGedung {
                             } while (tm < 1 || tm > 900);
                             boolean langkahSelanjutnya=true;
                             while (langkahSelanjutnya) {
-                            System.out.println("\nPilih Langkah Selanjutnya!");
-                            System.out.println("1. Sewa Barang tambahan Lain");
-                            System.out.println("2. Bayar Sekarang");
+                                System.out.println("\nPilih Langkah Selanjutnya!");
+                                System.out.println("1. Sewa Barang tambahan Lain");
+                                System.out.println("2. Bayar Sekarang");
+                                do {
+                                    System.out.print("Masukkan Pilihan : ");
+                                    stepGd = input.nextInt();
+                                    if (stepGd < 1 || stepGd > 2) {
+                                        System.out.println("Mohon masukkan angka antara 1 dan 2.");
+                                    }
+                                } while (stepGd < 1 || stepGd > 2);
                             }
                         } else if (verivikasi.equalsIgnoreCase("t")) {
                             System.out.print("Terima kasih! Selamat berjumpa kembali:)");
