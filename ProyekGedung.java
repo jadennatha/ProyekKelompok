@@ -158,26 +158,29 @@ public class ProyekGedung {
                                 } while (stepGd < 1 || stepGd > 2);
                                 switch (stepGd) {
                                     case 1:
-                                        System.out.print("Jumlah Meja yang akan dipesan : ");
-                                        subMenu1=input.nextInt();
-                                        hargaPil1=subMenu1*10000;
-                                        totalTarifPil1 = hargaPil1+tarif;
-                                        System.out.println("GEDUNG SOEHAT");
-                                        System.out.println("\n--------Informasi Pemesanan Anda!-------");
-                                        System.out.println("Atas Nama       : " + name);
-                                        System.out.println("No. Telepon     : " + noTelp);
-                                        System.out.println("Tanggal         : " + tgl);
-                                        System.out.println("Jumlah Tamu     : " + tm);
-                                        System.out.println("Barang tambahan : " + brgTersedia[0][0]);
-                                        System.out.println("Total Biaya     : Rp." + totalTarifPil1);
-                                        System.out.println("----------------------------------------");
-                                        System.exit(0);
+                                        System.out.println(",-----------------------------------------<");
+                                        System.out.println("|        Barang Sewa yang tersedia!       |");
+                                        System.out.println("|_________________________________________|");
+                                        System.out.printf("%-5s%-20s\n", "| No.", " | Nama Barang\t | Harga\t  |");
+                                        System.out.println("|-----|------------------|----------------|");
+                                        for (int i = 0; i < brgTersedia.length; i++) {
+                                            System.out.print("| "+(i + 1) + ". ");
+                                            for (int j=0; j<brgTersedia[i].length; j++){
+                                                System.out.print(" | "+brgTersedia[i][j]+"\t");
+                                            }
+                                            System.out.print("  |");
+                                            System.out.println();
+                                        }
+                                        System.out.println("|_____|__________________|_______________/.");       
+                                        do {
+                                            System.out.print("Masukkan Pilihan Anda : ");
+                                            menuGd1 = input.nextInt();
+                                            if (menuGd1 < 1 || menuGd1 > 4) {
+                                                System.out.println("Mohon masukkan angka antara 1 dan 4.");
+                                            }
+                                        } while (menuGd1 < 1 || menuGd1 > 4);
                                         break;
                                     case 2:
-                                        break;
-                                    case 3:
-                                        break;
-                                    case 4:
                                         break;
                                     default:
                                         break;
