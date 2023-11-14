@@ -83,6 +83,10 @@ public class ProyekGedung {
                             System.out.println("Login gagal. Username atau password salah. Silakan coba lagi.");
                         }
                     } while (!userAdminValid);
+                    System.out.println("1. lihat data member");
+                    System.out.println("2. Keluar");
+                    System.out.print("Masukkan Pilihan : ");
+                    menuAdm=input.nextInt();
                 } else if (stepLogin==2){
                 } else if (stepLogin==3){
                     System.out.println("Terima kasih.");
