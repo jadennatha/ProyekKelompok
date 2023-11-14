@@ -62,6 +62,27 @@ public class ProyekGedung {
                         {"admin1", "admin111"},
                         {"admin2", "admin222"}
                     };
+                    boolean userAdminValid;
+                    int menuAdm;
+                    do {
+                        System.out.print("Masukkan username: ");
+                        inputUserAdmin = input.next();
+                        System.out.print("Masukkan password: ");
+                        inputPwAdmin = input.next();
+                        userAdminValid=false;
+                        for (String[] user : users) {
+                            if (user[0].equals(inputUserAdmin) && user[1].equals(inputPwAdmin)) {
+                            userAdminValid = true;
+                                break;
+                            }
+                        }
+                        if (userAdminValid) {
+                            System.out.println("LOGIN BERHASIL!");
+                            System.out.println("SELAMAT DATANG, ADMIN:)");
+                        } else {
+                            System.out.println("Login gagal. Username atau password salah. Silakan coba lagi.");
+                        }
+                    } while (!userAdminValid);
                 } else if (stepLogin==2){
                 } else if (stepLogin==3){
                     System.out.println("Terima kasih.");
