@@ -57,6 +57,10 @@ public class ProyekGedung {
                         System.out.println("\nMohon masukkan nomor antara 1 dan 4.");
                     }
                 } while (stepLogin < 1 || stepLogin > 3);
+                if (stepLogin==1) {
+                } else if (stepLogin==2){
+                } else if (stepLogin==3){
+                }
             } else if (!akun.equalsIgnoreCase("y") || !akun.equalsIgnoreCase("t")){
                 System.out.println("Pilihan tidak tersedia. Mohon masukkan huruf y/t");
             }
