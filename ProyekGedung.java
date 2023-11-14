@@ -156,6 +156,18 @@ public class ProyekGedung {
                                         System.out.println("Mohon masukkan angka antara 1 dan 2.");
                                     }
                                 } while (stepGd < 1 || stepGd > 2);
+                                switch (stepGd) {
+                                    case 1:
+                                        break;
+                                    case 2:
+                                        break;
+                                    case 3:
+                                        break;
+                                    case 4:
+                                        break;
+                                    default:
+                                        break;
+                                }
                             }
                         } else if (verivikasi.equalsIgnoreCase("t")) {
                             System.out.print("Terima kasih! Selamat berjumpa kembali:)");
