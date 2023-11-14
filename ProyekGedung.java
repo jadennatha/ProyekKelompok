@@ -29,6 +29,10 @@ public class ProyekGedung {
             System.out.print("\nApakah Anda sudah punya akun? (y/t) : ");
             akun = input.next();
             if (akun.equalsIgnoreCase("t")){
+                System.out.print("Masukkan username baru: ");
+                String inputUserBaru = input.next();
+                System.out.print("Masukkan password baru: ");
+                String inputPwBaru = input.next();
             } else if (akun.equalsIgnoreCase("y")) {
             } else if (!akun.equalsIgnoreCase("y") || !akun.equalsIgnoreCase("t")){
                 System.out.println("Pilihan tidak tersedia. Mohon masukkan huruf y/t");
