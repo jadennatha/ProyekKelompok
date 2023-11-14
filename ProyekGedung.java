@@ -42,6 +42,14 @@ public class ProyekGedung {
                     System.out.println("Maaf, jumlah member melebihi batas yang ditentukan.");
                 }
             } else if (akun.equalsIgnoreCase("y")) {
+                System.out.println(",----------------------------------------------<");
+                System.out.println("|  Selamat Datang di Website Booking Gedung:)  |");
+                System.out.println("|        Silahkan pilih halaman login!         |");
+                System.out.println("|----------------------------------------------|");
+                System.out.println("|   1. Login Admin                             |");
+                System.out.println("|   2. Login Member                            |");
+                System.out.println("|   3. Keluar                                  |");
+                System.out.println("|_____________________________________________/.");
             } else if (!akun.equalsIgnoreCase("y") || !akun.equalsIgnoreCase("t")){
                 System.out.println("Pilihan tidak tersedia. Mohon masukkan huruf y/t");
             }
