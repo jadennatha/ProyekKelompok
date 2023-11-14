@@ -50,6 +50,13 @@ public class ProyekGedung {
                 System.out.println("|   2. Login Member                            |");
                 System.out.println("|   3. Keluar                                  |");
                 System.out.println("|_____________________________________________/.");
+                do {
+                    System.out.print("Masukkan Pilihan Anda (1-3) : ");
+                    stepLogin = input.nextInt();
+                    if (stepLogin < 1 || stepLogin > 3) {
+                        System.out.println("\nMohon masukkan nomor antara 1 dan 4.");
+                    }
+                } while (stepLogin < 1 || stepLogin > 3);
             } else if (!akun.equalsIgnoreCase("y") || !akun.equalsIgnoreCase("t")){
                 System.out.println("Pilihan tidak tersedia. Mohon masukkan huruf y/t");
             }
