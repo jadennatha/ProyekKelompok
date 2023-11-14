@@ -87,6 +87,19 @@ public class ProyekGedung {
                     System.out.println("2. Keluar");
                     System.out.print("Masukkan Pilihan : ");
                     menuAdm=input.nextInt();
+                    switch (menuAdm) {
+                            case 1:
+                                System.out.println("\nJumlah Member : "+jmlUserMemb );
+                                System.out.println("User yang telah terdaftar :\n");
+                                for (int i = 0; i < jmlUserMemb; i++) {
+                                    System.out.println("Username : " + regUserMemb[i]);
+                                    System.out.println("Password : " + regPwMemb[i]);
+                                    System.out.println("---------------------------");
+                                }
+                            case 2:
+                                System.exit(0);
+                            }   
+
                 } else if (stepLogin==2){
                 } else if (stepLogin==3){
                     System.out.println("Terima kasih.");
