@@ -15,6 +15,12 @@ public class ProyekGedung {
             {"Kursi     ", "Rp.5000/pcs"},
             {"Karpet    ", "Rp.50000/pcs"},
             {"Dekorasi  ", "Rp.300000"},
-         };
+        };
+        String[] regUserMemb = new String[100];
+        String[] regPwMemb = new String[100];
+        int jmlUserMemb = 0;
+        regUserMemb[jmlUserMemb] = "member";
+        regPwMemb[jmlUserMemb] = "12345";
+        jmlUserMemb++;
     }
 }
