@@ -181,6 +181,15 @@ public class ProyekGedung {
                                         } while (menuGd1 < 1 || menuGd1 > 4);
                                         break;
                                     case 2:
+                                        System.out.println("1. Bayar lewat BRI/BNI/BCA di no.rek 2341760195 a.n Gerly Vaeyungfan");
+                                        System.out.println("2. Bayar lewat DANA/ShopeePay/LinkAja di no 085604054712 a.n Gerly Vaeyungfan");
+                                        do {
+                                            System.out.print("Pilih Metode Pembayaran : ");
+                                            MmtdBayar = input.nextInt();
+                                            if (MmtdBayar < 1 || MmtdBayar > 2) {
+                                                System.out.println("Mohon masukkan angka antara 1 dan 2.");
+                                            }
+                                        } while (MmtdBayar < 1 || MmtdBayar > 2);
                                         break;
                                     default:
                                         break;
