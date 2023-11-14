@@ -121,6 +121,11 @@ public class ProyekGedung {
                             System.out.println("Login gagal. Username atau password salah. Silakan coba lagi.");
                         }
                     } while (!userMemberValid);
+                    boolean inginPesanLagi=true;
+                    while (inginPesanLagi) {
+                    System.out.print("\nApakah Anda ingin memesan gedung (y/t)? ");
+                    verivikasi = input.next();
+                    }
                 } else if (stepLogin==3){
                     System.out.println("Terima kasih.");
                     System.exit(0);
