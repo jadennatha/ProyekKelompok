@@ -23,7 +23,16 @@ public class ProyekGedung {
         regPwMemb[jmlUserMemb] = "12345";
         jmlUserMemb++;
 
-         System.out.println("\n^ SELAMAT DATANG DI WEBSITE BOOKING GDEUNG SOEHAT ^");
-         System.out.println("     ! Silahkan masuk untuk melanjutkan !     ");
+        System.out.println("\n^ SELAMAT DATANG DI WEBSITE BOOKING GDEUNG SOEHAT ^");
+        System.out.println("     ! Silahkan masuk untuk melanjutkan !     ");
+        do {
+            System.out.print("\nApakah Anda sudah punya akun? (y/t) : ");
+            akun = input.next();
+            if (akun.equalsIgnoreCase("t")){
+            } else if (akun.equalsIgnoreCase("y")) {
+            } else if (!akun.equalsIgnoreCase("y") || !akun.equalsIgnoreCase("t")){
+                System.out.println("Pilihan tidak tersedia. Mohon masukkan huruf y/t");
+            }
+        } while (!akun.equalsIgnoreCase("y") || !akun.equalsIgnoreCase("t"));
     }
 }
