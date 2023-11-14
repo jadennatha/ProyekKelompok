@@ -101,6 +101,26 @@ public class ProyekGedung {
                             }   
 
                 } else if (stepLogin==2){
+                    boolean userMemberValid;
+                    do {
+                        System.out.print("Masukkan username: ");
+                        inputUserMember = input.next();
+                        System.out.print("Masukkan password: ");
+                        inputPwMember = input.next();
+                        userMemberValid=false;
+                        for (int i = 0; i < jmlUserMemb; i++) {
+                            if (inputUserMember.equals(regUserMemb[i]) && inputPwMember.equals(regPwMemb[i])) {
+                                userMemberValid = true;
+                                break;
+                            }
+                        }
+                        if (userMemberValid) {
+                            System.out.println("\nLOGIN BERHASIL!");
+                            System.out.println("SELAMAT DATANG, MEMBER:)");
+                        } else {
+                            System.out.println("Login gagal. Username atau password salah. Silakan coba lagi.");
+                        }
+                    } while (!userMemberValid);
                 } else if (stepLogin==3){
                     System.out.println("Terima kasih.");
                     System.exit(0);
