@@ -126,6 +126,14 @@ public class ProyekGedung {
                         System.out.print("\nApakah Anda ingin memesan gedung (y/t)? ");
                         verivikasi = input.next();
                         if (verivikasi.equalsIgnoreCase("y")) {
+                            System.out.print("Masukkan Nama Anda : ");
+                            name = input.next();
+                            System.out.print("Masukkan No. Telepon : ");
+                            noTelp=input.next();
+                            System.out.print("Masukkan Tanggal Acara (DD-MM-YYY) : ");
+                            tgl = input.next();
+                            System.out.println("\nKapasitas Maksimal tamu 900.");
+                            System.out.println("Tarif yang harus anda bayar Rp.90000/tamu");
                         } else if (verivikasi.equalsIgnoreCase("t")) {
                             System.out.print("Terima kasih! Selamat berjumpa kembali:)");
                             System.exit(0);
