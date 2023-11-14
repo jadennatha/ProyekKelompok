@@ -58,8 +58,14 @@ public class ProyekGedung {
                     }
                 } while (stepLogin < 1 || stepLogin > 3);
                 if (stepLogin==1) {
+                    String[][] users = {
+                        {"admin1", "admin111"},
+                        {"admin2", "admin222"}
+                    };
                 } else if (stepLogin==2){
                 } else if (stepLogin==3){
+                    System.out.println("Terima kasih.");
+                    System.exit(0);
                 }
             } else if (!akun.equalsIgnoreCase("y") || !akun.equalsIgnoreCase("t")){
                 System.out.println("Pilihan tidak tersedia. Mohon masukkan huruf y/t");
