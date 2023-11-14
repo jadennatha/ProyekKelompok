@@ -158,6 +158,20 @@ public class ProyekGedung {
                                 } while (stepGd < 1 || stepGd > 2);
                                 switch (stepGd) {
                                     case 1:
+                                        System.out.print("Jumlah Meja yang akan dipesan : ");
+                                        subMenu1=input.nextInt();
+                                        hargaPil1=subMenu1*10000;
+                                        totalTarifPil1 = hargaPil1+tarif;
+                                        System.out.println("GEDUNG SOEHAT");
+                                        System.out.println("\n--------Informasi Pemesanan Anda!-------");
+                                        System.out.println("Atas Nama       : " + name);
+                                        System.out.println("No. Telepon     : " + noTelp);
+                                        System.out.println("Tanggal         : " + tgl);
+                                        System.out.println("Jumlah Tamu     : " + tm);
+                                        System.out.println("Barang tambahan : " + brgTersedia[0][0]);
+                                        System.out.println("Total Biaya     : Rp." + totalTarifPil1);
+                                        System.out.println("----------------------------------------");
+                                        System.exit(0);
                                         break;
                                     case 2:
                                         break;
