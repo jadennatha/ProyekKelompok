@@ -22,5 +22,8 @@ public class ProyekGedung {
         regUserMemb[jmlUserMemb] = "member";
         regPwMemb[jmlUserMemb] = "12345";
         jmlUserMemb++;
+
+         System.out.println("\n^ SELAMAT DATANG DI WEBSITE BOOKING GDEUNG SOEHAT ^");
+         System.out.println("     ! Silahkan masuk untuk melanjutkan !     ");
     }
 }
