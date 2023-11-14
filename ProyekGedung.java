@@ -214,6 +214,21 @@ public class ProyekGedung {
                                                 System.exit(0);
                                                 break;
                                             case 3:
+                                                System.out.print("Jumlah Karpet yang akan dipesan : ");
+                                                subMenu3=input.nextInt();
+                                                hargaPil3=subMenu3*50000;
+                                                totalTarifPil3 = hargaPil3+tarif;
+                                                System.out.println("\n>---------------------------------------<");
+                                                System.out.println("|\t\tGEDUNG SOEHAT\t\t|");
+                                                System.out.println("|________Informasi Pemesanan Anda!______|");
+                                                System.out.println("Atas Nama       : " + name);
+                                                System.out.println("No. Telepon     : " + noTelp);
+                                                System.out.println("Tanggal         : " + tgl);
+                                                System.out.println("Jumlah Tamu     : " + tm);
+                                                System.out.println("Barang tambahan : " + brgTersedia[2][0]);
+                                                System.out.println("Total Biaya     : Rp." + totalTarifPil3);
+                                                System.out.println("----------------------------------------");
+                                                System.exit(0);
                                                 break;
                                             case 4:
                                                 break;
