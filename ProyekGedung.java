@@ -144,6 +144,12 @@ public class ProyekGedung {
                                     System.out.println("Mohon memasukkan jumlah tamu minimal 1");
                                 }
                             } while (tm < 1 || tm > 900);
+                            boolean langkahSelanjutnya=true;
+                            while (langkahSelanjutnya) {
+                            System.out.println("\nPilih Langkah Selanjutnya!");
+                            System.out.println("1. Sewa Barang tambahan Lain");
+                            System.out.println("2. Bayar Sekarang");
+                            }
                         } else if (verivikasi.equalsIgnoreCase("t")) {
                             System.out.print("Terima kasih! Selamat berjumpa kembali:)");
                             System.exit(0);
