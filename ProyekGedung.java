@@ -91,13 +91,20 @@ public class ProyekGedung {
                             case 1:
                                 System.out.println("\nJumlah Member : "+jmlUserMemb );
                                 System.out.println("User yang telah terdaftar :\n");
-                                for (int i = 0; i < jmlUserMemb; i++) {
-                                    System.out.println("Username : " + regUserMemb[i]);
-                                    System.out.println("Password : " + regPwMemb[i]);
-                                    System.out.println("---------------------------");
-                                }
+                                    for (int i = 0; i < jmlUserMemb; i++) {
+                                        System.out.println("Username : " + regUserMemb[i]);
+                                        System.out.println("Password : " + regPwMemb[i]);
+                                        System.out.println("---------------------------");
+                                    }
                             case 2:
-                                System.exit(0);
+                                System.out.print("kembali ke menu login (y/t) ? ");
+                                String verif = input.next();
+                                    if (verif.equalsIgnoreCase("y")){
+                                        continue;
+                                    }else if (verif.equalsIgnoreCase("t")){
+                                        System.out.println("terima kasih");
+                                        System.exit(0);
+                                    }
                             }   
 
                 } else if (stepLogin==2){
