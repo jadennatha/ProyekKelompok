@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ProyekGedung {
+public class ProyekBookingGedung {
     static String[] namaBarang = new String[5];
     static int[] stokBarang = new int[5];
     static int jumlahBarang = 0;
